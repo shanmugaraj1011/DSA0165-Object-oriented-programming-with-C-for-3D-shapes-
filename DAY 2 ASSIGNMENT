@@ -1,0 +1,29 @@
+1.There are four very old cave paintings. find the oldest paintin using else.if ladder in c++ 
+4200 years old, 8500 years old, 1000 years old, 1300 years old
+
+ANSWER:
+
+#include <iostream>
+int main() {
+    int painting1 = 4200;
+    int painting2 = 8500;
+    int painting3 = 1000;
+    int painting4 = 1300;
+    int oldestPainting;
+    if (painting1 < painting2 && painting1 < painting3 && painting1 < painting4)
+{
+        oldestPainting = painting1;
+    }
+    else if (painting2 < painting3 && painting2 < painting4) {
+        oldestPainting = painting2;
+    }
+    else if (painting3 < painting4) {
+        oldestPainting = painting3;
+    }
+    else {
+        oldestPainting = painting4;
+    }
+
+    std::cout << "The oldest cave painting is " << oldestPainting << " years old." << std::endl;
+    return 0;
+}
